@@ -1,0 +1,199 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n    <style>\r\n        .container{\r\n            width: 100%;\r\n            height: 100%;\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n            justify-content: center;\r\n        }\r\n        form{\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n            justify-content: center;\r\n            gap: 24px;\r\n        }\r\n        .form-input{\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n            justify-content: center;\r\n        }\r\n        input[type=submit] {\r\n            width: 100%;\r\n            height: 30px;\r\n            background-color: #AAFFCC;\r\n        }\r\n        input[type=submit]:hover {\r\n            cursor: pointer;\r\n            background-color: #0CFF00;\r\n        }\r\n        input[type=submit]:active {\r\n            background-color: #000;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n<div class=\"container\">\r\n<h1>Registration form</h1>\r\n<form>\r\n    <div class=\"form-input\">\r\n        <label for=\"name-input\">Enter your name</label>\r\n        <input type=\"text\" id=\"name-input\" placeholder=\"Name\"/>\r\n    </div>\r\n    <div class=\"form-input\">\r\n        <label for=\"password-input\">Enter your password</label>\r\n        <input type=\"password\" id=\"password-input\" placeholder=\"password\"/>\r\n    </div>\r\n    <div class=\"form-input\">\r\n        <label for=\"user-type-input\">Select user type</label>\r\n        <select id=\"user-type-input\">\r\n            <option value=\"Admin\">Admin</option>\r\n            <option value=\"Moderator\">Moderator</option>\r\n            <option value=\"User\">User</option>\r\n        </select>\r\n    </div>\r\n    <input type=\"submit\" Value=\"Submit form\"/>\r\n</form>\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 3f71e54ae3ee9b7741ba1bf12991bb5c531a88b2)
++++ b/index.html	(date 1679413880788)
+@@ -3,64 +3,58 @@
+ <head>
+     <meta charset="UTF-8">
+     <title>Title</title>
+-    <style>
+-        .container{
+-            width: 100%;
+-            height: 100%;
+-            display: flex;
+-            flex-direction: column;
+-            align-items: center;
+-            justify-content: center;
+-        }
+-        form{
+-            display: flex;
+-            flex-direction: column;
+-            align-items: center;
+-            justify-content: center;
+-            gap: 24px;
+-        }
+-        .form-input{
+-            display: flex;
+-            flex-direction: column;
+-            align-items: center;
+-            justify-content: center;
+-        }
+-        input[type=submit] {
+-            width: 100%;
+-            height: 30px;
+-            background-color: #AAFFCC;
+-        }
+-        input[type=submit]:hover {
+-            cursor: pointer;
+-            background-color: #0CFF00;
+-        }
+-        input[type=submit]:active {
+-            background-color: #000;
+-        }
+-    </style>
++    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+-<div class="container">
+-<h1>Registration form</h1>
+-<form>
+-    <div class="form-input">
+-        <label for="name-input">Enter your name</label>
+-        <input type="text" id="name-input" placeholder="Name"/>
+-    </div>
+-    <div class="form-input">
+-        <label for="password-input">Enter your password</label>
+-        <input type="password" id="password-input" placeholder="password"/>
+-    </div>
+-    <div class="form-input">
+-        <label for="user-type-input">Select user type</label>
+-        <select id="user-type-input">
+-            <option value="Admin">Admin</option>
+-            <option value="Moderator">Moderator</option>
+-            <option value="User">User</option>
+-        </select>
+-    </div>
+-    <input type="submit" Value="Submit form"/>
+-</form>
++<div class="form-container">
++    <h1>Registration form</h1>
++    <form>
++        <div class="form-input">
++            <label for="user-name-input">Enter your name</label>
++            <input id="user-name-input" type="text" placeholder="Name">
++        </div>
++        <div class="form-input">
++            <label for="password-input">Enter your password</label>
++            <input id="password-input" type="password" placeholder="Password">
++        </div>
++        <div class="form-input">
++            <label for="user-type-input">Select your role</label>
++            <select id="user-type-input">
++                <option value="0">Admin</option>
++                <option value="1">Moderator</option>
++                <option value="2">User</option>
++            </select>
++        </div>
++    </form>
++    <div id="button-container">
++        <button id="submit-input" disabled>Submit button</button>
++        <button id="enable-submit" onclick="enableHandler()">Enable</button>
++        <button id="add-listener" onclick="addListener()">Add listener</button>
++        <button id="disable-submit" onclick="disableHandler()">Disable</button>
++    </div>
++
++
+ </div>
++<script type="text/javascript">
++    const button = document.querySelector("#submit-input");
++    const  itWorksListener = () => {
++        console.log("It clicks");
++    }
++    const  divClickHandler = (event) => {
++
++        console.log("div clicked", event.target);
++    }
++    document.querySelector("#button-container").addEventListener("click",divClickHandler)
++    function  enableHandler() {
++        button.disabled = false;
++    }
++    function  addListener() {
++        button.addEventListener("click", itWorksListener);
++    }
++    function  disableHandler() {
++        button.disabled = true;
++        button.removeEventListener("click", itWorksListener);
++    }
++</script>
+ </body>
+ </html>
+\ No newline at end of file
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># webNovikVV
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 3f71e54ae3ee9b7741ba1bf12991bb5c531a88b2)
++++ b/README.md	(date 1679412550091)
+@@ -1,1 +1,2 @@
+-# webNovikVV
+\ No newline at end of file
++# webNovikVV
++https://www.youtube.com/watch?v=dQw4w9WgXcQ
+\ No newline at end of file
+Index: styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/styles.css b/styles.css
+new file mode 100644
+--- /dev/null	(date 1679412446482)
++++ b/styles.css	(date 1679412446482)
+@@ -0,0 +1,46 @@
++.form-container {
++    height: 100vh;
++    width: 100vw;
++    display: flex;
++    flex-direction: column;
++    justify-content: center;
++    align-items: center;
++}
++
++form {
++    display: flex;
++    flex-direction: column;
++    justify-content: center;
++    align-items: center;
++    gap: 15px;
++}
++
++.form-input {
++    display: flex;
++    flex-direction: column;
++    justify-content: center;
++    align-items: center;
++}
++
++#user-name-input, #user-type-input, #password-input, #submit-input {
++    width: 350px;
++    height: 25px;
++    padding: 20px;
++}
++
++label {
++    margin: 40px;
++}
++
++input[type=submit] {
++    background-color: turquoise;
++}
++
++input[type=submit]:hover {
++    background-color: darkcyan;
++    cursor: pointer;
++}
++
++.submit-input {
++    background-color: red;
++}
+\ No newline at end of file
