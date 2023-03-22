@@ -1,10 +1,15 @@
-.form-container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+:root {
+    --var-bgcolor: #fff;
+    --var-fontcolor: #000;
+}
+
+body {
+    color: #222;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 form {
@@ -15,32 +20,45 @@ form {
     gap: 15px;
 }
 
-.form-input {
+.form-container
+{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#user-name-input, #user-type-input, #password-input, #submit-input {
-    width: 350px;
-    height: 25px;
-    padding: 20px;
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-input.error {
+    border-color: red;
 }
 
-label {
-    margin: 40px;
+[dark] {
+    --var-bgcolor: #333;
+    --var-fontcolor: #eee;
 }
 
-input[type=submit] {
-    background-color: turquoise;
+body {
+    background-color: var(--var-bgcolor);
+    color: var(--var-fontcolor);
 }
 
-input[type=submit]:hover {
-    background-color: darkcyan;
+.checkbox-theme
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline-block;
+    padding: 10px 25px;
     cursor: pointer;
 }
-
-.submit-input {
-    background-color: red;
+.snap{
+    color: red;
 }
