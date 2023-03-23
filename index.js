@@ -18,7 +18,7 @@ app.post('/reg-data', (req, res) => {
         if(err){
             res.status(500).send("User not added")
         }else{
-            res.status(500).send("User added")
+            res.status(200).send("User added")
         }
     })
 })
