@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="088c742d-3cb1-4462-ae36-d36accaeb88f" name="Changes" comment="add validation">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="088c742d-3cb1-4462-ae36-d36accaeb88f" name="Changes" comment="Simple form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,32 +39,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vadim\WebstormProjects\webNovikVV\public" />
-      <recent name="C:\Users\Vadim\WebstormProjects\webNovikVV" />
-      <recent name="C:\Users\Vadim\WebstormProjects\webNovikVV\static" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.start:dev">
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,7 +58,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start:dev" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -92,10 +70,6 @@
       <option name="presentableId" value="Default" />
       <updated>1679400972935</updated>
       <workItem from="1679400975313" duration="9665000" />
-      <workItem from="1679414158026" duration="7859000" />
-      <workItem from="1679474586077" duration="8215000" />
-      <workItem from="1679578648828" duration="1795000" />
-      <workItem from="1679588092619" duration="5522000" />
     </task>
     <task id="LOCAL-00001" summary="Simple form">
       <created>1679408210480</created>
@@ -104,28 +78,7 @@
       <option name="project" value="LOCAL" />
       <updated>1679408210480</updated>
     </task>
-    <task id="LOCAL-00002" summary="add css and js">
-      <created>1679414191347</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679414191347</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add css and js">
-      <created>1679414221788</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679414221788</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add validation">
-      <created>1679503097223</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679503097224</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,8 +97,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Simple form" />
-    <MESSAGE value="add css and js" />
-    <MESSAGE value="add validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple form" />
   </component>
 </project>
