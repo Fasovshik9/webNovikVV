@@ -1,0 +1,24 @@
+{
+  "name": "webmovikvv",
+  "version": "1.0.0",
+  "description": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "main": "indax.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start:prod": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Fasovshik9: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@github.com/Fasovshik9/webNovikVV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fasovshik9/webNovikVV/issues"
+  },
+  "homepage": "https://github.com/Fasovshik9/webNovikVV#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
