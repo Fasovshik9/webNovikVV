@@ -29,6 +29,7 @@ inpUserName.addEventListener("blur", ()=> {
     if (!inputValueUserName || inputValueUserName.length < 3){
         notValidate(inpUserName, spanUserName, 'Username must be longer than 3 characters')
         document.getElementById("submit-input").disabled = true;
+        checkValidUserName = false
     }else{
         valid(inpUserName, spanUserName, '')
         checkValidUserName = true
@@ -39,6 +40,7 @@ inpUserPassword.addEventListener("blur", ()=> {
     if (!inputValueUserPassword || inputValueUserPassword.length < 3){
         notValidate(inpUserPassword, spanUserPassword, 'User password must be longer than 3 characters')
         document.getElementById("submit-input").disabled = true;
+        checkValidUserPassword = false
     }else{
         valid(inpUserPassword, spanUserPassword, '')
         checkValidUserPassword = true
